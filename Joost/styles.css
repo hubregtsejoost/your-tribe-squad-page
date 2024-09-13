@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    background-color: #DCDCDC;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+
+    @media only screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.card {
+    display: grid;
+    border-radius: 15px;
+    background-color:#f0f0f0;
+    min-height: 12em;
+    padding: 1em;
+}
+
+.mugshot {
+    width: 50%;
+    height: auto;
+    margin: 10px;
+}
+
+
+button {
+    color: #202020;
+    padding: 1em;
+    border-radius: 5px;
+    border:none;
+    background-color: #DCDCDC;
+}
+
+button:hover {
+    background-color: #494949;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #202020;
+}
