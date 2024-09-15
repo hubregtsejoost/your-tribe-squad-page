@@ -6,7 +6,11 @@
  
 body {
     font-family: Arial, sans-serif;
-    background-color: #DCDCDC;
+    background-image: url("IMG/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczQ4LXRlZC0wNzA2LWV5ZS0wMS5qcGc.jpg.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 header {
     background-color: #CBCBCB;
@@ -27,19 +31,29 @@ nav a {
     font-weight: bold;
 }
 
- main {
+a:hover{
+   color:#888
+}
+
+main {
     padding: 20px;
  }
  
- h2 {
+h2 {
     margin-bottom: 20px;
     text-align: center;
     margin-top: 20px;
  }
 
-.teamgrid, .squadgrid, .amstelcampusgrid {
+.teamgrid{
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+.squadgrid, .amstelcampusgrid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
    gap: 20px;
 }
 
@@ -75,6 +89,9 @@ button {
    cursor: pointer;
 }
 
+button:hover{
+   background-color: #CBCBCB;
+}
 footer {
    text-align: center;
    padding: 20px;
@@ -91,3 +108,9 @@ h3{
     text-align: center;
     font-weight: normal;
 }
+
+img{
+   border-radius: 10px;
+   border: solid #888 2px;
+}
+
