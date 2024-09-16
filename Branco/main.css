@@ -6,10 +6,15 @@
  
 body {
     font-family: Arial, sans-serif;
-    background-image: url("IMG/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczQ4LXRlZC0wNzA2LWV5ZS0wMS5qcGc.jpg.webp");
+    background-image: url("IMG/lichte-foto-achtergrond-friendly-plain.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+}
+
+h1{
+   font-size: 50px;
+   text-shadow: 5px 5px 0px gray;
 
 }
 header {
@@ -19,6 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+    
  
 header h1 {
     margin-left: 10px;
@@ -43,6 +49,8 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     margin-top: 20px;
+    font-size: 30px;
+    text-shadow: #000000;
  }
 
 .teamgrid{
@@ -57,12 +65,32 @@ h2 {
    gap: 20px;
 }
 
+@media (max-width: 1200px) {
+   .squadgrid, .amstelcampusgrid {
+       grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+@media (max-width: 900px) {
+   .squadgrid, .amstelcampusgrid {
+       grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 600px) {
+   .squadgrid, .amstelcampusgrid {
+       grid-template-columns: 1fr;
+   }
+}
+
 .card {
    background-color: #e0e0e0;
    padding: 20px;
    text-align: center;
    border-radius: 10px;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 20px;
 }
 
 .image {
@@ -100,7 +128,7 @@ footer {
 }
 
 footer p {
-   font-size: 14px;
+   font-size: 15px;
 }
 
 h3{
@@ -112,5 +140,9 @@ h3{
 img{
    border-radius: 10px;
    border: solid #888 2px;
+}
+
+img:hover{
+   filter: brightness(130%);
 }
 
