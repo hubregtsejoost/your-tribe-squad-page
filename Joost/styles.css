@@ -11,21 +11,45 @@ body {
 
 
 /* Nav styles */
-.nav {
+.navbar {
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #CBCBCB;
-    border-radius: 10px;
-}
-
-.nav p {
-    padding: 15px;
-}
-
-.nav ul {
+    padding: 10px 20px;
     display: flex;
-    text-decoration: none;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+  border-radius: 15px;
+  font-family: helvetica;
 }
 
+.navbar-logo {
+    font-size: 2em;
+    color: #333;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+    text-decoration: underline;
+}
 
 /* Eerste onderdeel "Het Team" */
 #het-team {
