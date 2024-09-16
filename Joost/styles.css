@@ -2,9 +2,28 @@
 
 * {
     box-sizing: border-box;
-    background-color: #DCDCDC;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
+
+body {
+    background-color: #DCDCDC;
+}
+
+.nav {
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.nav p {
+    font-size: 1em;
+}
+
+#het-team {
+    text-align: center;
+    font-weight: 400;
+}
+
 
 main {
     display: grid;
