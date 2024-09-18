@@ -20,6 +20,8 @@ body {
 h1{
    font-size: 50px;
    text-shadow: 5px 5px 0px gray;
+   color: black;
+   
 
 }
 header {
@@ -58,7 +60,9 @@ h2 {
     text-align: center;
     margin-top: 20px;
     font-size: 30px;
-    text-shadow: #000000;
+    text-shadow: 0 0 2px#000000;
+    
+    
  }
 
 .teamgrid{
@@ -80,9 +84,23 @@ h2 {
    }
 }
 
+
+@media (max-width: 1060px){
+   .amstelcampusgrid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+
 @media (max-width: 900px) {
    .squadgrid, .amstelcampusgrid {
        grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 705px) {
+   .amstelcampusgrid {
+      grid-template-columns: repeat(1, 1fr);
    }
 }
 
@@ -90,17 +108,27 @@ h2 {
    .squadgrid, .teamgrid, .amstelcampusgrid {
        grid-template-columns: 1fr;
        justify-items: center;
+       /* box-sizing: border-box; */
+      
    }
 }
+
+
+.card, .amstel {
+   width:100%;
+   object-fit: cover;
+}
+
 
 .card {
    background-color: #e0e0e0;
    padding: 20px;
    text-align: center;
    border-radius: 10px;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 18px;
+   font-weight: bold;
 }
 
 .image {
@@ -109,6 +137,8 @@ h2 {
    height: 150px;
    margin-bottom: 10px;
    border-radius: 10px;
+   border-style: solid;
+   border-width: 10px;
 }
 
 .image-card img {
@@ -120,11 +150,14 @@ h2 {
 button {
    margin-top: 10px;
    padding: 10px 20px;
-   background-color: #888;
-   border: none;
+   background-color: #dbdbdb;
+   border: solid #888;
    color: white;
-   border-radius: 5px;
+   border-radius: 10px;
    cursor: pointer;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   color: #000000;
 }
 
 button:hover{
@@ -153,9 +186,20 @@ h3{
 img{
    border-radius: 10px;
    border: solid #888 2px;
+   border-width: 5px;
 }
 
 img:hover{
    filter: brightness(130%);
+}
+
+.card img:hover {
+   transform: scale(1.05); 
+   transition: transform 0.3s ease;
+}
+
+button:hover{
+   transform: scale(1.05); 
+   transition: transform 0.3s ease;
 }
 
