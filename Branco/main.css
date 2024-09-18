@@ -109,12 +109,12 @@ h2 {
    }
 }
 
-/* @media (max-width: 420px) { */
-   .card, .amstel {
-      width:100%;
-      object-fit: cover;
-   }
-/* } */
+
+.card, .amstel {
+   width:100%;
+   object-fit: cover;
+}
+
 
 .card {
    background-color: #e0e0e0;
