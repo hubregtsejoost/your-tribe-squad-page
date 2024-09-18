@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+   height:100dvh;
+}
  
 body {
     font-family: Arial, sans-serif;
@@ -10,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    min-height: 100%;
 }
 
 h1{
@@ -23,8 +28,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-    
+
  
 header h1 {
     margin-left: 10px;
@@ -63,6 +71,7 @@ h2 {
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    gap: 20px;
+   
 }
 
 @media (max-width: 1200px) {
@@ -78,8 +87,9 @@ h2 {
 }
 
 @media (max-width: 600px) {
-   .squadgrid, .amstelcampusgrid {
+   .squadgrid, .teamgrid, .amstelcampusgrid {
        grid-template-columns: 1fr;
+       justify-items: center;
    }
 }
 
@@ -124,7 +134,10 @@ footer {
    text-align: center;
    padding: 20px;
    background-color: #ccc;
-   margin-top: 40px;
+   margin-top: 20em;
+   position: sticky;
+   bottom:0;
+   
 }
 
 footer p {
