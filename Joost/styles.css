@@ -7,6 +7,7 @@
 
 body {
     background-color: #DCDCDC;
+    margin: 1em;
 }
 
 
@@ -157,6 +158,8 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+/* Footer styles */
 
 footer {
     background-color: #CBCBCB;
