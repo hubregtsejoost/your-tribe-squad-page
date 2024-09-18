@@ -1,0 +1,3 @@
+const observer = IntersectionObserver((entries) => {
+    
+}, {});
