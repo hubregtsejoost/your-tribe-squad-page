@@ -76,6 +76,11 @@ li:last-child {
   margin-right: 20px;
 }
 
+
+li > a {
+    color: inherit;
+}
+
 .logo {
   padding-left: 10px;
   font-size: 20px;
@@ -173,6 +178,15 @@ footer {
   /* margin-left: 2em; */
   padding-top: 0.5em;
   text-decoration: underline;
+}
+
+.footer-nav h1 {
+    font-size: 1.5em;
+    padding-left: 1.2em;
+}
+
+.footer-nav h3 {
+    padding-left: 1.5em;
 }
 
 /* Landscape phones and down */
