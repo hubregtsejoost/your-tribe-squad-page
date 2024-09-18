@@ -29,7 +29,11 @@ body {
   object-fit: cover;
   margin: 10px;
   border-radius: 10%; 
+
+  transform-style: preserve-3d;
+  transform: translateZ(30px); 
 }
+
 
 .navbar {
   background-color: var(--primary-color);
@@ -109,15 +113,15 @@ main h1 {
   margin: 2em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 3em;
 }
 
 .squad-section {
   height: auto;
 }
 
-.card {
-  background-color: var(--primary-color);
+.card { 
+  background-color: transparent;
   width: 90%;
   height: 100%;
   border-radius: 20px;
@@ -125,6 +129,23 @@ main h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  
+  transition: background-color 2s ease, box-shadow 0.4s ease, transform 0.4s ease;
+  transform-style: preserve-3d; 
+}
+
+.card:hover { 
+  background-color: rgba(203, 203, 203, 0.9); 
+  transform: perspective(800px) translateZ(30px) rotateX(10deg) rotateY(7deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); 
+}
+
+.card:hover > .person-img{
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-name: imgrotation; 
+  animation-fill-mode: forwards;
 }
 
 .info {
@@ -147,12 +168,15 @@ main h1 {
   border: none;
   width: 10vw;
 }
+ 
+
 
 .info > button > a {
   color: inherit;
-  text-decoration: none;
-  /* font-size: medium; */
+  text-decoration: none; 
 }
+
+
 
 .campus-card {
   display: grid;
@@ -188,6 +212,8 @@ footer {
 .footer-nav h3 {
     padding-left: 1.5em;
 }
+
+
 
 /* Landscape phones and down */
 @media (max-width: 700px) {
@@ -281,20 +307,17 @@ footer {
     padding-left: 10px;
     font-size: 1em;
   }
+} 
+  
+@keyframes imgrotation {
+  0%{
+    border-radius: 30%;
+  } 
+  50%{ 
+    border-radius: 40;
+    scale: 1.1;
+  }
+  100%{   
+    border-radius: 50%; 
+  }
 }
-
-/* Portrait tablet to landscape and desktop */
-/* @media (min-width: 768px) and (max-width: 979px) { ... } */
-
-/* Large desktop */
-/* @media (min-width: 1200px) { ... } */
-
-
-
-/* add trasitioni to the cards */
-
-/* https://codepen.io/gayane-gasparyan/pen/wvxewXO */
-
-
-
-

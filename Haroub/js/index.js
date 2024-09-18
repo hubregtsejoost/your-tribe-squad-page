@@ -75,7 +75,6 @@ let squad = [
 
 function displayCards() {
   
-	
   let squadSection = document.getElementsByClassName("squad-section")?.[0];
 
   squad.sort((a, b) => a - b).forEach((member) => {
