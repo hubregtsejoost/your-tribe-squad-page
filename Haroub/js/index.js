@@ -146,7 +146,7 @@ function displayCards() {
       card.setAttribute("class", "card");
 
       let cardImg = document.createElement("img");
-      cardImg.setAttribute("src", `assets/${member.name}.jpeg`);
+      cardImg.setAttribute("src", member.lastName == "El Hilali" ? `assets/${member.name}2.jpeg` : `assets/${member.name}.jpeg`);
       cardImg.setAttribute("alt", `${member.name} image`);
       cardImg.setAttribute("class", "person-img");
 
