@@ -192,12 +192,16 @@ if (true) {
     threshold: 0.6  
   };
 
+  // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
   const observer = new IntersectionObserver((entries, _observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) { 
         entry.target.classList.add('active');
+        entry.target.style.visibility = "visible";
       } else { 
         entry.target.classList.remove('active');
+        entry.target.style.visibility = "hidden";
+        console.log(entries);
       }
     });
   }, observerOptions);
