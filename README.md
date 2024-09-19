@@ -1,5 +1,5 @@
 <img src="https://github.com/user-attachments/assets/f9deaa13-63e9-4e36-99fa-15199e1a424f"
-alt="iphone" style="width:400px;"/>
+alt="iphone" style="width:200px;"/>
 <img src="https://github.com/user-attachments/assets/472f577b-3748-4803-b1b5-b25da0759f77"
 alt="ipad" style="width:400px;"/>
 <img src="https://github.com/user-attachments/assets/4aea695e-0a7a-43da-be72-e0f76ce92cc5"
