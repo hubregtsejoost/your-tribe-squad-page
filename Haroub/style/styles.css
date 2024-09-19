@@ -110,7 +110,7 @@ main h1 {
   height: auto;
 }
 
-.card {
+.card , .active{
   background-color: transparent;
   width: 90%;
   height: 100%;
@@ -125,13 +125,19 @@ main h1 {
   transform-style: preserve-3d; 
 }
 
-.card:hover { 
+.card:hover , .active{ 
   background-color: #EFE7DA;
   transform: perspective(800px) translateZ(30px) rotateX(10deg) rotateY(7deg);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 }
 
-.card:hover > .person-img {
+.ctive { 
+  background-color: #EFE7DA;
+  transform: perspective(800px) translateZ(30px) rotateX(10deg) rotateY(7deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover > .person-img, .card:active > .person-img , .active > .person-img{
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-name: imgrotation;
@@ -180,7 +186,10 @@ main h1 {
 }
 
 .card:hover .info > button,
-.card:hover .info > h4 { 
+.card:hover .info > h4,
+.active .info > button, 
+.active .info > h4
+ { 
   animation-direction: alternate;
   animation-timing-function: ease-out;
   animation-duration: 2s;
@@ -188,7 +197,9 @@ main h1 {
   animation-fill-mode: forwards;
 }
 
-.card:hover .info > button{
+.card:hover .info > button,
+.active .info > button
+{
   background-color: #cad4d3;
 }
 
@@ -346,21 +357,7 @@ h1 > a {
     padding-left: 10px;
     font-size: 1em;
   }
-}
-
-@keyframes imgrotation {
-  0% {
-    border-radius: 30%;
-  }
-  50% {
-    border-radius: 40;
-    scale: 1.1;
-  }
-  100% {
-    transform: translateX(0em);
-    border-radius: 50%;
-  }
-}
+} 
 
 @keyframes imgrotation {
   0% {
@@ -374,7 +371,7 @@ h1 > a {
   100% {
     transition-duration: 2s ease;
     border-radius: 50%;
-    transform: scale(1) translateX(0); /* Reset both scale and translate */
+    transform: scale(1) translateX(0); 
   }
 }
 

@@ -136,17 +136,22 @@ let squad = [
   },
 ];
 
-function displayCards() {
+(function displayCards() {
   let squadSection = document.getElementsByClassName("squad-section")?.[0];
 
   squad
     .sort((a, b) => a - b)
     .forEach((member) => {
       let card = document.createElement("article");
-      card.setAttribute("class", "card");
+      card.setAttribute("class", "card"); 
 
       let cardImg = document.createElement("img");
-      cardImg.setAttribute("src", member.lastName == "El Hilali" ? `assets/${member.name}2.jpeg` : `assets/${member.name}.jpeg`);
+      cardImg.setAttribute(
+        "src",
+        member.lastName == "El Hilali"
+          ? `assets/${member.name}2.jpeg`
+          : `assets/${member.name}.jpeg`
+      );
       cardImg.setAttribute("alt", `${member.name} image`);
       cardImg.setAttribute("class", "person-img");
 
@@ -154,7 +159,9 @@ function displayCards() {
       infoDiv.setAttribute("class", "info");
 
       let nameHeader = document.createElement("h4");
-      let nameTextNode = document.createTextNode(`${member.name} ${member.lastName}`);
+      let nameTextNode = document.createTextNode(
+        `${member.name} ${member.lastName}`
+      );
       nameHeader.appendChild(nameTextNode);
 
       let visitButton = document.createElement("button");
@@ -175,6 +182,29 @@ function displayCards() {
 
       squadSection.append(card);
     });
+})();
+ 
+if (true) {
+  const cards = document.querySelectorAll('.card');
+
+  const observerOptions = {
+    root: null, 
+    threshold: 0.6  
+  };
+
+  const observer = new IntersectionObserver((entries, _observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { 
+        entry.target.classList.add('active');
+      } else { 
+        entry.target.classList.remove('active');
+      }
+    });
+  }, observerOptions);
+ 
+  
+  cards.forEach(card => {
+    observer.observe(card);
+  });
 }
 
-displayCards();
