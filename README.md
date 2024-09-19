@@ -23,5 +23,13 @@ In week 1 van de opleiding van de Associate Degree Front-end Design en Webdevelo
  <li>Figma</li>
 </ul>
 
+<h2>Waar zijn we het meest trots op?</h2>
+Joost:
+
+Haroub:
+
+Branco:
+
+
 
 
