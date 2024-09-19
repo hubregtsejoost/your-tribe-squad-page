@@ -9,7 +9,7 @@ alt="desktop" style="width:400px;"/>
 
 
 <h1>Squadpage</h1>
-<br>
+<bhr>
 
 <H2>Beschrijving</H2>
 
