@@ -6,6 +6,6 @@ In week 1 van de opleiding van de Associate Degree Front-end Design en Webdevelo
 
 Voor de website te bouwen hebben we CSS en HTML gebruikt. Om de website te designen hebben we voornamelijk Figma gebruikt.
 
-![image](https://github.com/user-attachments/assets/ce7bed6a-b1db-43d5-89b4-448ad67bbdc8)
+img: src:"https://github.com/user-attachments/assets/ce7bed6a-b1db-43d5-89b4-448ad67bbdc8" height:"200";
 
 
