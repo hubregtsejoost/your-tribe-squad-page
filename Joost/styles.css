@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 * {
     box-sizing: border-box;
     font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -92,6 +102,10 @@ body {
 .card-image {
     margin: 15px;
     aspect-ratio: 1/1;
+}
+
+.in-view {
+    animation: fade 0.3s 0.3s both;
 }
 
 .card-image img {
