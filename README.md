@@ -103,10 +103,10 @@ In week 1 van de Associate Degree opleiding Front-end Design en Development hebb
 Dit is de eerste keer dat we dynamisch HTML-elementen genereren met JavaScript. Voorheen zouden we de HTML direct hebben geschreven, maar hier maken we gebruik van de kracht van JavaScript om DOM-elementen on-the-fly te creëren. Deze aanpak is efficiënter.
 
 ### 2. Werken met Array Data
-We gebruiken een JavaScript `forEach`-loop om een dataset (de `squad` array) door te lopen en individuele kaarten te renderen voor elk lid van het team. Het sorteren en renderen gebeurt automatisch, wat ons meer flexibiliteit geeft om data aan te passen zonder de HTML handmatig te herschrijven.
+We gebruiken een JavaScript `forEach`-loop om een dataset (de `squad` array) door te lopen en individuele kaarten te renderen voor elk lid van het team. Het sorteren en renderen gebeurt automatisch, wat er voor zorgt dat we data makkelijk kunnen aanpassen zonder de HTML handmatig te herschrijven.
 
 ### 3. Voorwaardelijke Logica
-In een deel van de code implementeerden we voorwaardelijke logica om specifieke afbeeldingen weer te geven op basis van de achternaam van het lid. Dit deed ons zorgvuldig nadenken over efficiëntie en prestaties—hoewel we de ternary operator hadden kunnen optimaliseren, beseften we dat dit niet cruciaal is voor een kleine dataset zoals deze.
+In een deel van de code zit voorwaardelijke logica om specifieke afbeeldingen weer te geven op basis van de achternaam van de leerling. Dit deed ons nadenken over efficiëntie en prestaties—hoewel we de ternary operator hadden kunnen optimaliseren, beseften we dat dit niet echt nodig is voor een kleine dataset zoals deze.
 
 ### 4. Schone Code
 We hebben de zorgen gescheiden op een manier die deze code leesbaar en onderhoudbaar maakt. Elk deel van de kaart, zoals de afbeelding, naam en knop, heeft zijn eigen `div`, `img` of `a`-element dat afzonderlijk is gemaakt. Deze structuur stelt ons in staat het ontwerp in de toekomst eenvoudig aan te passen.
