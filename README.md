@@ -102,7 +102,7 @@ In week 1 van de Associate Degree opleiding Front-end Design en Development hebb
 Natuurlijk, hier is je oorspronkelijke tekst in eenvoudigere taal:
 
 1. **Voor het eerst HTML-elementen maken met JavaScript**  
-   - Dit is de eerste keer dat we met JavaScript automatisch HTML maken. Vroeger schreven we de HTML zelf, maar nu gebruiken we JavaScript om elementen direct aan de pagina toe te voegen. Dit is efficiënter.
+   - Dit is de eerste keer dat we met JavaScript automatisch HTML maken. Eerder schreven we de HTML zelf, maar nu gebruiken we JavaScript om elementen direct aan de pagina toe te voegen. Dit is efficiënter.
 
 2. **Werken met gegevens uit een array**  
    - We gebruiken een `forEach`-loop in JavaScript om een lijst (array) van studenten door te lopen en voor elke student een kaart te maken. De kaarten worden automatisch gegenereerd, waardoor we de gegevens makkelijk kunnen aanpassen zonder de HTML zelf te hoeven veranderen.
