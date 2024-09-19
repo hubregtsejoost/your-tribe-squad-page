@@ -1,4 +1,4 @@
-let squad = [
+const squad = [
   {
     name: "Amber",
     lastName: "Schalker",
@@ -137,6 +137,10 @@ let squad = [
 ];
 
 (function displayCards() {
+
+  // return and do not render squad pages
+  if(window.location.pathname!=="/") return;
+
   let squadSection = document.getElementsByClassName("squad-section")?.[0];
 
   squad
