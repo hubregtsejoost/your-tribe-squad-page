@@ -105,22 +105,22 @@ Natuurlijk, hier is je oorspronkelijke tekst in eenvoudigere taal:
    - Dit is de eerste keer dat we met JavaScript automatisch HTML maken. Vroeger schreven we de HTML zelf, maar nu gebruiken we JavaScript om elementen direct aan de pagina toe te voegen. Dit is efficiënter.
 
 2. **Werken met gegevens uit een array**  
-   - We gebruiken een `forEach`-loop in JavaScript om een lijst (array) van teamleden door te lopen en voor elk lid een kaart te maken. De kaarten worden automatisch gegenereerd, waardoor we de gegevens makkelijk kunnen aanpassen zonder de HTML zelf te hoeven veranderen.
+   - We gebruiken een `forEach`-loop in JavaScript om een lijst (array) van studenten door te lopen en voor elke student een kaart te maken. De kaarten worden automatisch gegenereerd, waardoor we de gegevens makkelijk kunnen aanpassen zonder de HTML zelf te hoeven veranderen.
 
 3. **Voorwaardelijke logica**  
-   - In een deel van de code hebben we logica toegevoegd om specifieke afbeeldingen te tonen, afhankelijk van de achternaam van een teamlid. We dachten na over manieren om dit sneller te maken, maar voor een kleine lijst zoals deze is dat niet nodig.
+   - In een deel van de code hebben we logica toegevoegd om specifieke afbeeldingen te tonen, afhankelijk van de achternaam van een student. We dachten na over manieren om dit sneller te maken, maar voor een kleine lijst zoals deze is dat niet nodig.
 
 4. **Nette code**  
    - We hebben ervoor gezorgd dat de code netjes en overzichtelijk is. Elk onderdeel van de kaart, zoals de afbeelding, naam en knop, heeft zijn eigen element. Dit maakt het makkelijk om het ontwerp later aan te passen.
 
 5. **Onze vaardigheden uitbreiden**  
-   - Dit kleine project heeft ons geholpen om beter te begrijpen hoe we HTML met JavaScript kunnen manipuleren, gebeurtenissen kunnen afhandelen en functies kunnen gebruiken. Dit is een goede basis om op verder te bouwen.
+   - Dit project heeft ons geholpen om beter te begrijpen hoe we HTML met JavaScript kunnen mengen, gebeurtenissen kunnen afhandelen en functies kunnen gebruiken. Dit is een goede basis om op verder te bouwen.
 
 **Toekomstige verbeteringen**  
 - **Optimalisatie**: De code werkt goed voor een kleine lijst, maar we kunnen het nog sneller maken, bijvoorbeeld door de voorwaardelijke logica te verbeteren.
-- **Styling**: We willen ook geavanceerdere CSS gebruiken om de kaarten mooier te maken.
+- **Styling**: We willen ook geavanceerdere CSS gebruiken om de kaarten nog mooier te maken.
 
-Dit project is een belangrijke stap in onze ontwikkeling als programmeurs en helpt ons op weg naar complexere en interactievere webapplicaties.
+Dit project is een belangrijke stap in onze ontwikkeling als programmeurs en helpt ons op weg naar mooie en gebruiksvriendelijke webapplicaties.
 
 
 <H2>Samenwerking</H2>
