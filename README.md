@@ -11,6 +11,9 @@ alt="desktop" style="width:400px;"/>
 <h1>Squadpage</h1>
 <bhr>
 
+<br>
+<br>
+
 <H2>Beschrijving</H2>
 
 Wij zijn Branco van Beek, Haroub Said en Joost Hubregtse. Wil je meer informatie over ons vinden? Ga via onze Squadpage naar onze Visitekaartjes!
