@@ -143,7 +143,7 @@ let squad = [
     .sort((a, b) => a - b)
     .forEach((member) => {
       let card = document.createElement("article");
-      card.setAttribute("class", "card"); 
+      card.setAttribute("class", "card");
 
       let cardImg = document.createElement("img");
 
@@ -186,33 +186,28 @@ let squad = [
       squadSection.append(card);
     });
 })();
- 
-if (true) {
-  const cards = document.querySelectorAll('.card');
 
-  const observerOptions = {
-    root: null, 
-    threshold: 0.6  
-  };
+const cards = document.querySelectorAll(".card");
 
-  // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-  const observer = new IntersectionObserver((entries, _observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) { 
-        entry.target.classList.add('active');
-  // https://www.w3schools.com/jsref/prop_style_visibility.asp
-        entry.target.style.visibility = "visible";
-      } else { 
-        entry.target.classList.remove('active');
-        entry.target.style.visibility = "hidden";
-        console.log(entries);
-      }
-    });
-  }, observerOptions);
- 
-  
-  cards.forEach(card => {
-    observer.observe(card);
+const observerOptions = {
+  root: null,
+  threshold: [0, 0.25, 0.5, 0.75, 1],
+};
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+const observer = new IntersectionObserver((entries, _observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      // https://www.w3schools.com/jsref/prop_style_visibility.asp
+      entry.target.style.visibility = "visible";
+    } else {
+      entry.target.classList.remove("active");
+      entry.target.style.visibility = "hidden";
+    }
   });
-}
+}, observerOptions);
 
+cards.forEach((card) => {
+  observer.observe(card);
+});
