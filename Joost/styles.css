@@ -9,6 +9,11 @@
     }
 }
 
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+}
 
 * {
     box-sizing: border-box;
@@ -105,7 +110,16 @@ body {
 }
 
 .in-view {
-    animation: fade 0.3s 0.3s both;
+    animation: slide 0.3s 0.3s both;
+
+    @media only screen and (min-width: 1050px) {
+        animation: fade 0.3s 0.3s both;
+    }
+
+}
+
+.out-of-view {
+    opacity: 0;
 }
 
 .card-image img {
@@ -168,7 +182,7 @@ body {
     grid-gap: 1em;
     grid-template-columns: 1fr;
 
-    @media only screen and (min-width: 768px){
+    @media only screen and (min-width: 1050px){
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
