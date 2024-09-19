@@ -146,12 +146,15 @@ let squad = [
       card.setAttribute("class", "card"); 
 
       let cardImg = document.createElement("img");
+
+      // I could reverse the ternary operator for efficiency but in this case it doesn't matter. list is too short
       cardImg.setAttribute(
         "src",
         member.lastName == "El Hilali"
           ? `assets/${member.name}2.jpeg`
           : `assets/${member.name}.jpeg`
       );
+
       cardImg.setAttribute("alt", `${member.name} image`);
       cardImg.setAttribute("class", "person-img");
 
@@ -197,6 +200,7 @@ if (true) {
     entries.forEach(entry => {
       if (entry.isIntersecting) { 
         entry.target.classList.add('active');
+  // https://www.w3schools.com/jsref/prop_style_visibility.asp
         entry.target.style.visibility = "visible";
       } else { 
         entry.target.classList.remove('active');
