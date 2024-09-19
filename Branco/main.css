@@ -1,205 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-   height:100dvh;
+  height: 100dvh;
 }
- 
+
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("IMG/lichte-foto-achtergrond-friendly-plain.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url("IMG/abstracte-grijze-olieverf-getextureerde-achtergrond_53876-129925.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
 }
 
-h1{
-   font-size: 50px;
-   text-shadow: 5px 5px 0px gray;
-   color: black;
-   
-
+h1 {
+  font-size: 50px;
+  text-shadow: 5px 5px 0px gray;
+  color: black;
 }
 header {
-    background-color: #CBCBCB;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background-color: #cbcbcb;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
- 
 header h1 {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 nav a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-a:hover{
-   color:#888
+a:hover {
+  color: #888;
 }
 
 main {
-    padding: 20px;
- }
- 
-h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
-    text-shadow: 0 0 2px#000000;
-    
-    
- }
-
-.teamgrid{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 20px;
+  padding: 20px;
 }
 
-.squadgrid, .amstelcampusgrid {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 20px;
-   
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  text-shadow: 0 0 2px#000000;
+}
+
+.teamgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.squadgrid,
+.amstelcampusgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 @media (max-width: 1200px) {
-   .squadgrid, .amstelcampusgrid {
-       grid-template-columns: repeat(3, 1fr);
-   }
+  .squadgrid,
+  .amstelcampusgrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-
-@media (max-width: 1060px){
-   .amstelcampusgrid {
-      grid-template-columns: repeat(2, 1fr);
-   }
+@media (max-width: 1060px) {
+  .amstelcampusgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 
 @media (max-width: 900px) {
-   .squadgrid, .amstelcampusgrid {
-       grid-template-columns: repeat(2, 1fr);
-   }
+  .squadgrid,
+  .amstelcampusgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 705px) {
-   .amstelcampusgrid {
-      grid-template-columns: repeat(1, 1fr);
-   }
+  .amstelcampusgrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
-   .squadgrid, .teamgrid, .amstelcampusgrid {
-       grid-template-columns: 1fr;
-       justify-items: center;
-       /* box-sizing: border-box; */
-      
-   }
+  .squadgrid,
+  .teamgrid,
+  .amstelcampusgrid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
-
-.card, .amstel {
-   width:100%;
-   object-fit: cover;
+.card,
+.amstel {
+  width: 100%;
+  object-fit: cover;
 }
-
 
 .card {
-   background-color: #e0e0e0;
-   padding: 20px;
-   text-align: center;
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size: 18px;
-   font-weight: bold;
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .image {
-   background-color: #ccc;
-   width: 100%;
-   height: 150px;
-   margin-bottom: 10px;
-   border-radius: 10px;
-   border-style: solid;
-   border-width: 10px;
+  background-color: #ccc;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 10px;
 }
 
 .image-card img {
-   width: 100%;
-   height: auto;
-   border-radius: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 button {
-   margin-top: 10px;
-   padding: 10px 20px;
-   background-color: #dbdbdb;
-   border: solid #888;
-   color: white;
-   border-radius: 10px;
-   cursor: pointer;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 15px;
-   color: #000000;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #dbdbdb;
+  border: solid #888;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #000000;
 }
 
-button:hover{
-   background-color: #CBCBCB;
+button:hover {
+  background-color: #cbcbcb;
 }
 footer {
-   text-align: center;
-   padding: 20px;
-   background-color: #ccc;
-   margin-top: 20em;
-   position: sticky;
-   bottom:0;
-   
+  text-align: center;
+  padding: 20px;
+  background-color: #ccc;
+  margin-top: 20em;
+  position: sticky;
+  bottom: 0;
 }
 
 footer p {
-   font-size: 15px;
+  font-size: 15px;
 }
 
-h3{
-    margin-bottom: 1em;
-    text-align: center;
-    font-weight: normal;
+h3 {
+  margin-bottom: 1em;
+  text-align: center;
+  font-weight: normal;
 }
 
-img{
-   border-radius: 10px;
-   border: solid #888 2px;
-   border-width: 5px;
+img {
+  border-radius: 10px;
+  border: solid #888 2px;
+  border-width: 5px;
 }
 
-img:hover{
-   filter: brightness(130%);
+img:hover {
+  filter: brightness(130%);
 }
 
 .card img:hover {
-   transform: scale(1.05); 
-   transition: transform 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
-button:hover{
-   transform: scale(1.05); 
-   transition: transform 0.3s ease;
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
-
