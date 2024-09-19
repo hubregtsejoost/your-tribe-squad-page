@@ -99,26 +99,28 @@ In week 1 van de Associate Degree opleiding Front-end Design en Development hebb
 
 ## Waarom we Trots zijn op Deze Code
 
-### 1. Eerste Keer HTML Elementen Maken met JavaScript
-Dit is de eerste keer dat we dynamisch HTML-elementen genereren met JavaScript. Voorheen zouden we de HTML direct hebben geschreven, maar hier maken we gebruik van de kracht van JavaScript om DOM-elementen on-the-fly te creëren. Deze aanpak is efficiënter.
+Natuurlijk, hier is je oorspronkelijke tekst in eenvoudigere taal:
 
-### 2. Werken met Array Data
-We gebruiken een JavaScript `forEach`-loop om een dataset (de `squad` array) door te lopen en individuele kaarten te renderen voor elk lid van het team. Het sorteren en renderen gebeurt automatisch, wat er voor zorgt dat we data makkelijk kunnen aanpassen zonder de HTML handmatig te herschrijven.
+1. **Voor het eerst HTML-elementen maken met JavaScript**  
+   - Dit is de eerste keer dat we met JavaScript automatisch HTML maken. Vroeger schreven we de HTML zelf, maar nu gebruiken we JavaScript om elementen direct aan de pagina toe te voegen. Dit is efficiënter.
 
-### 3. Voorwaardelijke Logica
-In een deel van de code zit voorwaardelijke logica om specifieke afbeeldingen weer te geven op basis van de achternaam van de leerling. Dit deed ons nadenken over efficiëntie en prestaties—hoewel we de ternary operator hadden kunnen optimaliseren, beseften we dat dit niet echt nodig is voor een kleine dataset zoals deze.
+2. **Werken met gegevens uit een array**  
+   - We gebruiken een `forEach`-loop in JavaScript om een lijst (array) van teamleden door te lopen en voor elk lid een kaart te maken. De kaarten worden automatisch gegenereerd, waardoor we de gegevens makkelijk kunnen aanpassen zonder de HTML zelf te hoeven veranderen.
 
-### 4. Schone Code
-We hebben de zorgen gescheiden op een manier die deze code leesbaar en onderhoudbaar maakt. Elk deel van de kaart, zoals de afbeelding, naam en knop, heeft zijn eigen `div`, `img` of `a`-element dat afzonderlijk is gemaakt. Deze structuur stelt ons in staat het ontwerp in de toekomst eenvoudig aan te passen.
+3. **Voorwaardelijke logica**  
+   - In een deel van de code hebben we logica toegevoegd om specifieke afbeeldingen te tonen, afhankelijk van de achternaam van een teamlid. We dachten na over manieren om dit sneller te maken, maar voor een kleine lijst zoals deze is dat niet nodig.
 
-### 5. Uitbreiden van Onze Vaardigheden
-Dit kleine project heeft ons uitgedaagd om beter te begrijpen hoe DOM-manipulatie, event handling en het gebruik van JavaScript-functies om met HTML te communiceren, werken. Het is een basis waarop we willen voortbouwen.
+4. **Nette code**  
+   - We hebben ervoor gezorgd dat de code netjes en overzichtelijk is. Elk onderdeel van de kaart, zoals de afbeelding, naam en knop, heeft zijn eigen element. Dit maakt het makkelijk om het ontwerp later aan te passen.
 
-## Toekomstige Verbeteringen
-- **Optimalisatie:** Hoewel deze code goed werkt voor een kleine lijst, zijn we ons ervan bewust dat er manieren zijn om te optimaliseren, zoals het omkeren van ternary operaties voor snellere opzoekingen.
-- **Styling:** We zijn van plan dit verder te verbeteren door geavanceerdere CSS toe te passen voor de kaartontwerpen.
+5. **Onze vaardigheden uitbreiden**  
+   - Dit kleine project heeft ons geholpen om beter te begrijpen hoe we HTML met JavaScript kunnen manipuleren, gebeurtenissen kunnen afhandelen en functies kunnen gebruiken. Dit is een goede basis om op verder te bouwen.
 
-Over het algemeen symboliseert deze code een grote sprong vooruit in onze reis om ontwikkelaars te worden. Het is een opstap naar het schrijven van nog complexere, interactieve webapplicaties!
+**Toekomstige verbeteringen**  
+- **Optimalisatie**: De code werkt goed voor een kleine lijst, maar we kunnen het nog sneller maken, bijvoorbeeld door de voorwaardelijke logica te verbeteren.
+- **Styling**: We willen ook geavanceerdere CSS gebruiken om de kaarten mooier te maken.
+
+Dit project is een belangrijke stap in onze ontwikkeling als programmeurs en helpt ons op weg naar complexere en interactievere webapplicaties!
 
 
 
