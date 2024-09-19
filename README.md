@@ -5,7 +5,10 @@ alt="ipad" style="width:300px;"/>
 <img src="https://github.com/user-attachments/assets/4aea695e-0a7a-43da-be72-e0f76ce92cc5"
 alt="desktop" style="width:400px;"/>
 
-
+<img src="https://github.com/user-attachments/assets/a9459a3a-d66d-491c-ace7-7ed33428a3aa"
+alt="mobile" style="width:200px;"/>
+<img src="https://github.com/user-attachments/assets/fbc940e1-355c-49b0-84ca-bdc34a2f96b3"
+alt="desktop" style="width:600px;"/>
 
 
 <h1>Squadpage</h1>
