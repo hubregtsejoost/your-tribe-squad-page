@@ -102,8 +102,6 @@ In week 1 van de Associate Degree opleiding Front-end Design en Development hebb
 
 ## Waarom we Trots zijn op Deze Code
 
-Natuurlijk, hier is je oorspronkelijke tekst in eenvoudigere taal:
-
 1. **Voor het eerst HTML-elementen maken met JavaScript**  
    - Dit is de eerste keer dat we met JavaScript automatisch HTML maken. Eerder schreven we de HTML zelf, maar nu gebruiken we JavaScript om elementen direct aan de pagina toe te voegen. Dit is efficiënter.
 
