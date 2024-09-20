@@ -138,9 +138,6 @@ const squad = [
 
 (function displayCards() {
 
-  // return and do not render squad pages
-  if(!window.location.pathname.includes('index.html') || window.location.pathname!=="/") return;
-
   let squadSection = document.getElementsByClassName("squad-section")?.[0];
 
   squad
