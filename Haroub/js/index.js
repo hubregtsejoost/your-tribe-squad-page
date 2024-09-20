@@ -1,4 +1,4 @@
-let squad = [
+const squad = [
   {
     name: "Amber",
     lastName: "Schalker",
@@ -136,7 +136,8 @@ let squad = [
   },
 ];
 
-function displayCards() {
+(function displayCards() {
+
   let squadSection = document.getElementsByClassName("squad-section")?.[0];
 
   squad
@@ -146,7 +147,15 @@ function displayCards() {
       card.setAttribute("class", "card");
 
       let cardImg = document.createElement("img");
-      cardImg.setAttribute("src", member.lastName == "El Hilali" ? `assets/${member.name}2.jpeg` : `assets/${member.name}.jpeg`);
+
+      // I could reverse the ternary operator for efficiency but in this case it doesn't matter. list is too short
+      cardImg.setAttribute(
+        "src",
+        member.lastName == "El Hilali"
+          ? `assets/${member.name}2.jpeg`
+          : `assets/${member.name}.jpeg`
+      );
+
       cardImg.setAttribute("alt", `${member.name} image`);
       cardImg.setAttribute("class", "person-img");
 
@@ -154,7 +163,9 @@ function displayCards() {
       infoDiv.setAttribute("class", "info");
 
       let nameHeader = document.createElement("h4");
-      let nameTextNode = document.createTextNode(`${member.name} ${member.lastName}`);
+      let nameTextNode = document.createTextNode(
+        `${member.name} ${member.lastName}`
+      );
       nameHeader.appendChild(nameTextNode);
 
       let visitButton = document.createElement("button");
@@ -175,6 +186,29 @@ function displayCards() {
 
       squadSection.append(card);
     });
-}
+})();
 
-displayCards();
+const cards = document.querySelectorAll(".card");
+
+const observerOptions = {
+  root: null,
+  threshold: [0, 0.25, 0.5, 0.75, 1],
+};
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+const observer = new IntersectionObserver((entries, _observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("active");
+      // https://www.w3schools.com/jsref/prop_style_visibility.asp
+      entry.target.style.visibility = "visible";
+    } else {
+      entry.target.classList.remove("active");
+      entry.target.style.visibility = "hidden";
+    }
+  });
+}, observerOptions);
+
+cards.forEach((card) => {
+  observer.observe(card);
+});
