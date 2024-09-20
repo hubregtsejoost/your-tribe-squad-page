@@ -102,8 +102,6 @@ In week 1 van de Associate Degree opleiding Front-end Design en Development hebb
 
 ## Waarom we Trots zijn op Deze Code
 
-Natuurlijk, hier is je oorspronkelijke tekst in eenvoudigere taal:
-
 1. **Voor het eerst HTML-elementen maken met JavaScript**  
    - Dit is de eerste keer dat we met JavaScript automatisch HTML maken. Eerder schreven we de HTML zelf, maar nu gebruiken we JavaScript om elementen direct aan de pagina toe te voegen. Dit is efficiënter.
 
@@ -129,7 +127,7 @@ Dit project is een belangrijke stap in onze ontwikkeling als programmeurs en hel
 <H2>Samenwerking</H2>
 Onze samenwerking verliep goed. We hebben regelmatig via Microsoft Teams overlegd om ideeën uit te wisselen, vragen te stellen en oplossingen te vinden voor eventuele uitdagingen. Door deze constante communicatie konden we snel vooruitgang boeken en ervoor zorgen dat iedereen op één lijn zat. Ook in de les zelf verliep de communicatie goed.
 
-Daarnaast maakten we intensief gebruik van de GitHub-issues om onze taken te organiseren en bij te houden. Dit hielp ons om duidelijk zicht te houden op wat er gedaan moest worden, wie waar aan werkte, en welke problemen nog opgelost moesten worden. Deze manier van werken zorgde ervoor dat het project gestructureerd en efficiënt verliep.
+Daarnaast maakten we gebruik van de GitHub-issues om onze taken te organiseren en bij te houden. Dit hielp ons om duidelijk zicht te houden op wat er gedaan moest worden, wie waar aan werkte, en welke problemen nog opgelost moesten worden. Deze manier van werken zorgde ervoor dat het project gestructureerd en efficiënt verliep.
 
 
 
